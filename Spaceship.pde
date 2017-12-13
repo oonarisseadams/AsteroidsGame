@@ -4,10 +4,10 @@ class Spaceship extends Floater
   {
     corners = 13;
     //creating spaceship shape
-    int[] xRA = {-8, -3, 6, 8, 11, 8, 6, -3, -8, -5, -7, -7, -5};
-    int[] yRA = {8, 8, 2, 2, 0, -2, -2, -8, -8, -3, -1, 1, 3};
-    xCorners = xRA;
-    yCorners = yRA;
+    int[] xT = {-8, -3, 6, 8, 11, 8, 6, -3, -8, -5, -7, -7, -5};
+    int[] yT = {8, 8, 2, 2, 0, -2, -2, -8, -8, -3, -1, 1, 3};
+    xCorners = xT;
+    yCorners = yT;
     myColor = color(255,255,255);
     myCenterX = myCenterY = 250;
     myDirectionX = myDirectionY = 0;
