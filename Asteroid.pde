@@ -6,7 +6,6 @@ class Asteroid extends Floater
   public Asteroid() 
   {
     //making rotaton speed with equal +/- probability
-    //speedRotation = (int)(Math.random()*9)-4;
     speedRotation = (int)(Math.random()*2)-1;
     myColor = color(102, 30, 0);
     myDirectionX = (int)(Math.random()*8)-5;
