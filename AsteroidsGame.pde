@@ -1,5 +1,6 @@
-Spaceship masa;
+Spaceship masa = new Spaceship();
 Star[] universe = new Star[200];
+ArrayList <Asteroid> fireball = new ArrayList <Asteroid>();
 
 public void setup() 
 {
@@ -9,7 +10,11 @@ public void setup()
   {
     universe[i] = new Star();
   }
-  masa = new Spaceship();
+  
+  for(int i = 0; i < 10; i++)  //uses arraylist
+  {
+    fireball.add(new Asteroid());
+  }
 }
 
 public void draw() 
@@ -20,6 +25,10 @@ public void draw()
     for(int i = 0; i < universe.length; i++)
     {
       universe[i].show();
+    }
+    for(int i=0; i < fireball.size(); i++){
+      fireball.get(i).show();
+      fireball.get(i).move();
     }
 }
 
