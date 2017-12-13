@@ -29,8 +29,11 @@ public void draw()
     for(int i=0; i < fireball.size(); i++){
       fireball.get(i).show();
       fireball.get(i).move();
-    }
-}
+      if(dist(masa.getX(),masa.getY(),fireball.get(i).getX(),fireball.get(i).getY())<30){
+       fireball.remove(i);
+     }
+   }
+ }
 
 public void keyPressed(){
   //hyperspace
