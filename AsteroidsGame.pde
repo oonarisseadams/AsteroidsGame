@@ -11,7 +11,7 @@ public void setup()
     universe[i] = new Star();
   }
   
-  for(int i = 0; i < 10; i++)  //uses arraylist
+  for(int i = 0; i < 15; i++)  //uses arraylist
   {
     fireball.add(new Asteroid());
   }
